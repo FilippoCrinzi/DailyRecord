@@ -1,0 +1,120 @@
+.headBar {
+    background-color: #ed002d;
+    width: 100%; /* Larghezza al 100% della pagina */
+    height: 60px;
+    color: #fff; /* Testo bianco per contrastare con lo sfondo rosso */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-sites{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pages{
+    display: none;
+}
+
+#logo{
+    background: url(media/logo2.png) center/contain no-repeat;;
+    height: 50px;
+    width: 101.5625px;
+    background-size: 100% 100%;
+    left: 10px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+#hamburger{
+    background: url(media/hamburger.png)  center/contain no-repeat; ;
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+#twitter{
+    background: url(media/twitter.png) center/contain no-repeat;;
+    display: block;
+    width: 30px; /* Aggiungi la larghezza alle icone social */
+    height: 30px; /* Aggiungi l'altezza alle icone social */
+    margin-left: 7px; /* Aggiungi margine sinistro alle icone social */
+}
+#instagram{
+    background: url(media/instagram.png) center/contain no-repeat;;
+    display: block;
+    width: 30px; /* Aggiungi la larghezza alle icone social */
+    height: 30px; /* Aggiungi l'altezza alle icone social */
+    margin-left: 7px; /* Aggiungi margine sinistro alle icone social */
+}
+#facebook{
+    background: url(media/facebook.png) center/contain no-repeat;;
+    display: block;
+    width: 30px; /* Aggiungi la larghezza alle icone social */
+    height: 30px; /* Aggiungi l'altezza alle icone social */
+    margin-left: 7px; /* Aggiungi margine sinistro alle icone social */
+}
+#search{
+    background: url(media/search.png) center/contain no-repeat;;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+    position: relative;
+}
+#login{
+    background: url(media/login.png) center/contain no-repeat;;
+    display: block;
+    height: 60px;
+    width: 80px;
+    background-size: 105% 105%;
+    position: relative;
+}
+
+@media screen and (max-width: 1269px) {
+    /* Mostra le icone social */
+    .social-sites {
+        display: none;
+    }
+    .headBar{
+         height: 50px;
+        justify-content: normal;
+    }
+   #hamburger{
+       display: block;
+   }
+   #search{
+       margin-left: auto;
+   }
+   #logo{
+       left : 0;
+   }
+   #login{
+       height: 50px;
+       width: 70px;
+   }
+}
+@media (min-width: 1270px) {
+    .pages {
+        display: inline;
+        position: relative;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        box-sizing: border-box;
+        font-weight: 600;
+        height: 70px;
+        padding: 29px 8px 0;
+    }
+}
