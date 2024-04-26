@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .social-sites{
     display: flex;
     align-items: center;
@@ -23,7 +24,37 @@
 .pages{
     display: none;
 }
-
+.pages a {
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none; /* Nascondi il menu a discesa per impostazione predefinita */
+    position: absolute;
+    background-color: white; /* Colore di sfondo del menu a discesa */
+    list-style: none;
+    padding: 10px;
+    z-index: 1;
+    top: 65.5px;
+    border: 1px solid #cecbcb;
+    left: 0;
+}
+.pages:hover .dropdown-menu {
+    display: block; /* Mostra il menu a discesa quando si passa il mouse sopra l'elemento con la classe 'pages' */
+}
+.dropdown-menu li {
+    padding: 5px 0;
+}
+.dropdown-menu li a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2c2c2c;
+    height: auto;
+    padding: 15px 0;
+    text-transform: none;
+    white-space: nowrap;
+}
 #logo{
     background: url(media/logo2.png) center/contain no-repeat;;
     height: 50px;
@@ -43,6 +74,7 @@
     display: none;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 #twitter{
     background: url(media/twitter.png) center/contain no-repeat;;
@@ -72,6 +104,7 @@
     width: 50px;
     background-size: 100% 100%;
     position: relative;
+    cursor: pointer;
 }
 #login{
     background: url(media/login.png) center/contain no-repeat;;
@@ -80,9 +113,9 @@
     width: 80px;
     background-size: 105% 105%;
     position: relative;
+    cursor: pointer;
 }
-
-@media screen and (max-width: 1269px) {
+@media screen and (max-width: 1100px) {
     /* Mostra le icone social */
     .social-sites {
         display: none;
@@ -105,7 +138,7 @@
        width: 70px;
    }
 }
-@media (min-width: 1270px) {
+@media (min-width: 1070px) { /*si attiva quando è almeno tot px*/
     .pages {
         display: inline;
         position: relative;
@@ -116,5 +149,10 @@
         font-weight: 600;
         height: 70px;
         padding: 29px 8px 0;
+    }
+}
+@media (max-width: 1200px){
+    #partnerStories{
+        display: none;
     }
 }
