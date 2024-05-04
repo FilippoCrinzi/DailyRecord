@@ -5,10 +5,15 @@
     <title>Daily Record & Sunday Mail - Scottish News, Sport and Politics</title>
     <link rel="icon" href="media/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
       <div class="headBar">
-          <a id="hamburger"></a>
+          <a class="justify-content-center d-flex hamburger " >
+              <img src="node_modules/bootstrap-icons/icons/list.svg">
+          </a>
           <a id="logo" href=""></a>
           <nav>
             <section>
@@ -62,7 +67,7 @@
                             <li><a href="#">Celebrity Interviews</a></li>
                         </ul>
                     </a></li>
-                    <li class="pages"><a>LIFE & STILE</a></li>
+                    <li class="pages" id="lifeAndStyle"><a>LIFE & STILE</a></li>
                     <li class="pages" id="partnerStories"><a>PARTNER STORIES</a></li>
                     <li class="pages"><a>MORE ▾
                         <ul class="dropdown-menu">
@@ -77,7 +82,7 @@
                 </ul>
             </section>
           </nav>
-          <div style="margin-left: auto ; margin-right: 15px">
+          <div class="container-social-sites">
               <ul class="social-sites">
                   <li class="icon"><a href="https://twitter.com/Daily_Record" id="twitter"></a></li>
                   <li class="icon"> <a href="https://www.instagram.com/scottishdailyrecord/" id="instagram"></a></li>
@@ -86,6 +91,207 @@
           </div>
           <a id="search"></a>
           <a id="login"></a>
+      </div>
+      <div id="takeover"></div>
+      <nav class="secondary">
+          <section>
+              <ul>
+                  <li><a>buy a paper</a></li>
+                  <li><a>road record</a></li>
+                  <li><a>property</a></li>
+                  <li><a>marketplace</a></li>
+                  <li><a>competition</a></li>
+                  <li><a>horoscopes</a></li>
+                  <li><a>deals</a></li>
+                  <li><a>funeral notices</a></li>
+                  <li><a>jobs</a></li>
+                  <li><a>crosswords</a></li>
+                  <li><a>advertise with us</a></li>
+                  <li><a>newsletter signup</a></li>
+              </ul>
+          </section>
+      </nav>
+      <div class="wrapper">
+          <div class="mainNews">
+              <div>
+                  <img src="media/800x450.svg">
+              </div>
+              <div class="headline">
+                  <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque sollicitudin massa id pulvinar. Nam.</a>
+              </div>
+              <div class="description">
+                  <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae condimentum velit, sit amet aliquam.</a>
+              </div>
+              <div class="bookmark">
+                  <a>Bookmark</a>
+                  <a>
+                      <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                  </a>
+              </div>
+          </div>
+          <div class="News">
+              <img src="media/220x145.svg">
+              <div>
+                  <a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante blandit, volutpat tellus.</a>
+              </div>
+              <div class="info-container">
+                  <div class="label-container">
+                      <div>
+                        <a class="label">SNP</a>
+                      </div>
+                      <div class="vertical-line"></div>
+                      <div class="comments-count">
+                          <img src="node_modules/bootstrap-icons/icons/chat-left-text.svg">
+                          <a class="label">9</a>
+                      </div>
+                  </div>
+                  <div class="bookmark">
+                      <a>Bookmark</a>
+                      <a>
+                          <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="News">
+              <img src="media/220x145.svg">
+              <div>
+                  <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis massa a ante.</a>
+              </div>
+              <div class="info-container">
+                  <div class="label-container">
+                      <div>
+                          <a class="label">SNP</a>
+                      </div>
+                      <div class="vertical-line"></div>
+                      <div class="comments-count">
+                          <img src="node_modules/bootstrap-icons/icons/chat-left-text.svg">
+                          <a class="label">9</a>
+                      </div>
+                  </div>
+                  <div class="bookmark">
+                      <a>Bookmark</a>
+                      <a>
+                          <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="News">
+              <img src="media/220x145.svg">
+              <div>
+                  <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur egestas posuere.</a>
+              </div>
+              <div class="info-container">
+                  <div class="label-container">
+                      <div>
+                          <a class="label">SNP</a>
+                      </div>
+                      <div class="vertical-line"></div>
+                      <div class="comments-count">
+                          <img src="node_modules/bootstrap-icons/icons/chat-left-text.svg">
+                          <a class="label">4</a>
+                      </div>
+                  </div>
+                  <div class="bookmark">
+                      <a>Bookmark</a>
+                      <a>
+                          <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="News">
+          <img src="media/220x145.svg">
+          <div>
+              <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat ligula mauris, a feugiat.</a>
+          </div>
+          <div class="info-container">
+              <div class="label-container">
+                  <div>
+                      <a class="label">SNP</a>
+                  </div>
+                  <div class="vertical-line"></div>
+                  <div class="comments-count">
+                      <img src="node_modules/bootstrap-icons/icons/chat-left-text.svg">
+                      <a class="label">2</a>
+                  </div>
+              </div>
+              <div class="bookmark">
+                  <a>Bookmark</a>
+                  <a>
+                      <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                  </a>
+              </div>
+          </div>
+      </div>
+          <div class="second-main-news">
+              <div class="d-flex flex-column">
+                  <div class="headline-smn">
+                      <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque sollicitudin.</a>
+                  </div>
+                  <div class="description-smn">
+                      <a>courts</a>
+                  </div>
+                  <div class="bookmark">
+                      <a>Bookmark</a>
+                      <a>
+                          <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                      </a>
+                  </div>
+              </div>
+              <div>
+                  <img src="media/800x450.svg">
+              </div>
+          </div>
+          <div class="News">
+              <img src="media/220x145.svg">
+              <div>
+                  <a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante blandit, volutpat tellus.</a>
+              </div>
+              <div class="info-container">
+                  <div class="label-container">
+                      <div>
+                          <a class="label">SNP</a>
+                      </div>
+                      <div class="vertical-line"></div>
+                      <div class="comments-count">
+                          <img src="node_modules/bootstrap-icons/icons/chat-left-text.svg">
+                          <a class="label">9</a>
+                      </div>
+                  </div>
+                  <div class="bookmark">
+                      <a>Bookmark</a>
+                      <a>
+                          <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="News">
+              <img src="media/220x145.svg">
+              <div>
+                  <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis massa a ante.</a>
+              </div>
+              <div class="info-container">
+                  <div class="label-container">
+                      <div>
+                          <a class="label">SNP</a>
+                      </div>
+                      <div class="vertical-line"></div>
+                      <div class="comments-count">
+                          <img src="node_modules/bootstrap-icons/icons/chat-left-text.svg">
+                          <a class="label">9</a>
+                      </div>
+                  </div>
+                  <div class="bookmark">
+                      <a>Bookmark</a>
+                      <a>
+                          <img src="node_modules/bootstrap-icons/icons/bookmark.svg">
+                      </a>
+                  </div>
+              </div>
+          </div>
       </div>
 </body>
 </html>
