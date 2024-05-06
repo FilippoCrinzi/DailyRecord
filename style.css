@@ -252,7 +252,7 @@ img {
     margin: 0 auto;
     grid-gap: 40px 30px ;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .wrapper {
         width: auto;
         margin-left: 10px;
@@ -264,6 +264,7 @@ img {
     background: #2c2c2c;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 @media screen and (min-width: 1069px) {
 .hamburger{
@@ -393,6 +394,7 @@ body {
 .news{
     background: white;
     display: flex;
+    cursor: pointer;
 }
 .News > div > a {
     font-family: "Open Sans", sans-serif;
@@ -444,6 +446,7 @@ body {
     background: #2c2c2c;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 .second-main-news .d-flex {
     flex: 0 0 30%;
@@ -480,8 +483,94 @@ body {
     margin:0 12px 18px;
     padding: 0;
 }
-@media screen and (max-width: 950px) {
-    .second-main-news {
+
+.small-news-column{
+    display: flex;
+    flex-direction: column;
+    grid-row: 3/6;
+    grid-column: 4;
+    width: 100%;
+    border-left: 1.5px solid #e0e0e0;
+}
+.small-news{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1.5px solid #e0e0e0;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.small-news:first-child {
+    border-top: none; /* Rimuovi la barra superiore dalla prima notizia */
+}
+.headline-snc {
+    color: #141414;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 13.5px;
+    flex-grow: 1;
+}
+
+.container-small-news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.small-news .bookmark a {
+    color: #141414;
+}
+.container-small-news img {
+    width: auto;
+    height: auto;
+}
+.container-small-news > div:first-child {
+    flex: 0 0 55%;
+    margin-right: 10px; /* Aggiungi un margine a destra del div che contiene l'immagine */
+}
+.container-large-news{
+    display: flex;
+    grid-column: 1/4;
+}
+.large-news{
+    flex: 1;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.large-news:last-child {
+    margin-right: 0;
+}
+.large-news > div > a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.large-news .bookmark a {
+    color: #141414;
+}
+
+@media screen and (max-width: 1050px) {
+    .second-main-news{
         grid-column: 1/5;
     }
+   .container-large-news{
+        grid-column: 1/5;
+    }
+    .small-news-column{
+        grid-row: auto;
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    <--TODO: implementare le small news che diventano come le large news-->
+   .small-news{
+       grid-column: auto;
+       flex: 1;
+       flex-direction: row;
+       cursor: pointer;
+    }
+
 }
