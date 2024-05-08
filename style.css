@@ -356,7 +356,7 @@ img {
     height: 7%;
     overflow: hidden;
 }
-mainNews div:nth-child(4) {
+.mainNews div:nth-child(4) {
     height: 7%;
     overflow: hidden;
 }
@@ -395,14 +395,19 @@ body {
     background: white;
     display: flex;
     cursor: pointer;
+    flex-direction: column;
+    grid-column: auto;
 }
-.News > div > a {
+.news .info-container {
+    margin-top: auto;
+}
+.news > .container2-large-news > div > a {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: black;
     font-weight: bold;
 }
-.News .bookmark a {
+.news .bookmark a {
     color: #141414;
 }
 .label{
@@ -415,6 +420,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+    margin-top: auto;
 }
 .label-container{
     display: flex;
@@ -448,7 +454,12 @@ body {
     flex-direction: row;
     cursor: pointer;
 }
-.second-main-news .d-flex {
+
+.container-smn{
+     display: flex;
+     flex-direction: column;
+ }
+.second-main-news .container-smn {
     flex: 0 0 30%;
 }
 .second-main-news img {
@@ -517,6 +528,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
 }
 .small-news .bookmark a {
     color: #141414;
@@ -532,8 +544,11 @@ body {
 .container-large-news{
     display: flex;
     grid-column: 1/4;
+    grid-row: auto;
 }
 .large-news{
+    display: flex;
+    flex-direction: column;
     flex: 1;
     margin-right: 30px;
     cursor: pointer;
@@ -541,7 +556,7 @@ body {
 .large-news:last-child {
     margin-right: 0;
 }
-.large-news > div > a {
+.large-news > .container2-large-news > div > a {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: black;
@@ -558,19 +573,112 @@ body {
    .container-large-news{
         grid-column: 1/5;
     }
+   .container-small-news{
+       flex-direction: column;
+   }
     .small-news-column{
         grid-row: auto;
         grid-column: 1/5;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+        border-left: none;
+    }
+    .small-news{
+         display: flex;
+         flex-direction: column;
+         cursor: pointer;
+         padding-top: 0;
+         padding-bottom: 0;
+         border-top: none;
+         margin-left: 0;
+     }
+    .container-small-news > div:first-child {
+        margin-right: 0;
+    }
+    .headline-snc {
+        font-size: 16px;
+    }
+    .news > .container2-large-news > div > a {
+        font-size: 14px;
     }
     <--TODO: implementare le small news che diventano come le large news-->
-   .small-news{
-       grid-column: auto;
-       flex: 1;
-       flex-direction: row;
-       cursor: pointer;
-    }
 
+}
+@media screen and (min-width: 1051px) {
+    .small-news > .info-container > .label-container {
+        display: none;
+    }
+}
+.container2-large-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+@media screen and (max-width: 728px){
+    .container2-large-news{
+          flex-direction: row;
+    }
+    .news{
+        grid-column: 1/5;
+        padding: 10px 0 10px 10px;
+        width: 100%;
+    }
+    .second-main-news {
+        grid-row: auto;
+    }
+    .container-large-news{
+        flex-direction: column;
+    }
+    .large-news{
+        width: 100%;
+        padding: 10px 0 10px 10px;
+    }
+    .container2-large-news >div:first-child{
+        margin-right: 10px;
+        flex: 0 0 30%;
+    }
+    .wrapper {
+        grid-row-gap: 0;
+    }
+    .small-news-column{
+        padding: 0;
+        display: flex;
+        grid-row-gap: 0;
+        margin-right: 0;
+    }
+    .small-news{
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .container-small-news{
+        flex-direction: row;
+    }
+    .container-small-news > div:first-child {
+        flex: 0 0 30%;
+        margin-right: 10px;
+    }
+    .news, .large-news, .small-news {
+        box-sizing: border-box;
+    }
+    .second-main-news {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-main-news > div:first-child {
+        order: 2;
+    }
+    .second-main-news > div:last-child {
+        order: 1;
+    }
+    .headline-smn{
+        font-size: 24px;
+    }
+    .second-main-news div:nth-child(2) img {
+        object-position: center;
+        border-bottom: 5px solid red;
+    }
 }
