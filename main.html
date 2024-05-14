@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daily Record & Sunday Mail - Scottish News, Sport and Politics</title>
-    <link rel="icon" href="media/icon.png" type="image/png">
+    <link rel="icon" href="media/100x100red.svg" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,39 @@
 </head>
 <body>
       <div class="headBar">
-          <a class="justify-content-center d-flex hamburger " >
-              <img src="node_modules/bootstrap-icons/icons/list.svg">
-          </a>
+          <div>
+              <button class="hamburger" >
+                  <a>
+                      <img src="node_modules/bootstrap-icons/icons/list.svg">
+                  </a>
+              </button>
+              <ul class="dropdown-menu1">
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">POLITICS</a></li>
+                  <li><a href="#">FOOTBALL</a></li>
+                  <li><a href="#">SPORT</a></li>
+                  <li><a href="#">TV & CELEBS</a></li>
+                  <li><a href="#">LIFE & STYLE</a></li>
+                  <li><a href="#">PARTNER STORIES</a></li>
+                  <li><a href="#">LEGAL MATTERS</a></li>
+                  <li><a href="#">SCOTLAND NOW</a></li>
+                  <li><a href="#">IN YOUR AREA</a></li>
+                  <li><a href="#">BUSINESS</a></li>
+                  <li><a href="#">TRAVEL</a></li>
+                  <li class="grey border-top-red"><a href="#">BUY A PAPER</a></li>
+                  <li class="grey"><a href="#">ROAD RECORD</a></li>
+                  <li class="grey"><a href="#">PROPERTY</a></li>
+                  <li class="grey"><a href="#">MARKETPLACE</a></li>
+                  <li class="grey"><a href="#">COMPETITIONS</a></li>
+                  <li class="grey"><a href="#">HOROSCOPES</a></li>
+                  <li class="grey"><a href="#">DEALS</a></li>
+                  <li class="grey"><a href="#">FUNERAL NOTICES</a></li>
+                  <li class="grey"><a href="#">JOBS</a></li>
+                  <li class="grey"><a href="#">CROSSWORDS</a></li>
+                  <li class="grey"><a href="#">ADVERTISE WITH US</a></li>
+                  <li class="grey"><a href="#">NEWSLETTER SIGNUP</a></li>
+              </ul>
+          </div>
           <a id="logo" href=""></a>
           <nav>
             <section>
@@ -84,13 +115,28 @@
           </nav>
           <div class="container-social-sites">
               <ul class="social-sites">
-                  <li class="icon"><a href="https://twitter.com/Daily_Record" id="twitter"></a></li>
-                  <li class="icon"> <a href="https://www.instagram.com/scottishdailyrecord/" id="instagram"></a></li>
-                  <li class="icon"><a href="https://www.facebook.com/TheScottishDailyRecord" id="facebook" ></a></li>
+                  <li class="follow-us">
+                      <a>follow us</a>
+                  </li>
+                  <li class="icon-facebook"><a href="https://www.facebook.com/TheScottishDailyRecord" >
+                      <img src="node_modules/bootstrap-icons/icons/facebook.svg">
+                  </a></li>
+                  <li class="icon-twitter"> <a href="https://twitter.com/Daily_Record">
+                      <img src="node_modules/bootstrap-icons/icons/twitter.svg">
+                  </a></li>
+                  <li class="icon-instagram"><a href="https://www.instagram.com/scottishdailyrecord/" >
+                        <img src="node_modules/bootstrap-icons/icons/instagram.svg">
+                  </a></li>
               </ul>
           </div>
-          <a id="search"></a>
-          <a id="login"></a>
+          <a class="search-icon">
+              <img src="node_modules/bootstrap-icons/icons/search.svg">
+          </a>
+          <div class="container-account">
+              <a class="account">
+                  <img src="node_modules/bootstrap-icons/icons/person-circle.svg">
+              </a>
+          </div>
       </div>
       <div id="takeover"></div>
       <nav class="secondary">
@@ -531,17 +577,17 @@
                   </div>
                   <div class="social-container">
                       <div>
-                          <a>
+                          <a href="https://www.facebook.com/TheScottishDailyRecord">
                               <img src="node_modules/bootstrap-icons/icons/facebook.svg">
                           </a>
                       </div>
                       <div>
-                          <a>
+                          <a href="https://twitter.com/Daily_Record">
                               <img src="node_modules/bootstrap-icons/icons/twitter.svg">
                           </a>
                       </div>
                       <div>
-                          <a>
+                          <a href="https://www.instagram.com/scottishdailyrecord/">
                               <img src="node_modules/bootstrap-icons/icons/instagram.svg">
                           </a>
                       </div>
@@ -592,5 +638,6 @@
               </div>
           </div>
       </div>
+      <script src="main.js"></script>
 </body>
 </html>
