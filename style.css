@@ -677,6 +677,7 @@ body {
     flex-direction: column;
     color: white;
     padding-bottom: 10px;
+    margin-top: 40px;
 }
 .footer-section{
     display: inline-flex;
